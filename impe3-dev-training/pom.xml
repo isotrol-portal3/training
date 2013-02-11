@@ -1,0 +1,91 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>impe3-parent</artifactId>
+		<groupId>com.isotrol.impe3</groupId>
+		<version>2.9.173</version>
+	</parent>
+	<groupId>com.isotrol.impe3.training</groupId>
+	<artifactId>impe3-dev-training</artifactId>
+	<version>3.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>Port@l :: Development Training</name>
+	<description>Port@l Development Training project</description>
+	<inceptionYear>2010</inceptionYear>
+
+	<scm>
+		<connection>scm:svn:http://isotrol-portal.googlecode.com/svn/trunk/impe3-dev-training</connection>
+		<developerConnection>scm:svn:https://isotrol-portal.googlecode.com/svn/trunk/impe3-dev-training</developerConnection>
+		<url>http://code.google.com/p/isotrol-portal/source/browse/#svn/trunk/impe3-dev-training</url>
+	</scm>
+
+	<organization>
+		<name>Isotrol, SA.</name>
+		<url>https://www.isotrol.com</url>
+	</organization>
+
+	<repositories>
+		<repository>
+			<id>isotrol-portal-m2-ro</id>
+			<name>Isotrol Port@l M2 Repository</name>
+			<url>http://isotrol-portal-m2.googlecode.com/svn/trunk/m2/</url>
+		</repository>
+	</repositories>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<artifactId>maven-scm-plugin</artifactId>
+					<groupId>org.apache.maven.plugins</groupId>
+					<version>1.4</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+		<plugins>
+			<plugin>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.0</version>
+				<configuration>
+					<autoVersionSubmodules>true</autoVersionSubmodules>
+					<preparationGoals>clean</preparationGoals>
+					<goals>install</goals>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-all</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.isotrol.impe3</groupId>
+			<artifactId>impe3-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+		</dependency>
+	</dependencies>
+
+	<modules>
+		<module>impe3-dev-training-mod</module>
+		<module>impe3-dev-training-pms</module>
+		<module>impe3-dev-training-web</module>
+	</modules>
+
+</project>

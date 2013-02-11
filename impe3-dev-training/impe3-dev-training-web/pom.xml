@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.isotrol.impe3.training</groupId>
+		<artifactId>impe3-dev-training</artifactId>
+		<version>3.0.0-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>impe3-dev-training-web</artifactId>
+	<packaging>war</packaging>
+	<name>Port@l :: Development Training :: Port@l Webapp</name>
+
+	<build>
+		<finalName>impe3-dev-training-web</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.mortbay.jetty</groupId>
+				<artifactId>jetty-maven-plugin</artifactId>
+				<version>7.0.1.v20091125</version>
+			</plugin>
+		</plugins>
+
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.isotrol.impe3.training</groupId>
+			<artifactId>impe3-dev-training-mod</artifactId>
+			<version>3.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.isotrol.impe3</groupId>
+			<artifactId>impe3-online-webapp-deps</artifactId>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+			<groupId>com.isotrol.impe3</groupId>
+			<artifactId>impe3-online-webapp</artifactId>
+			<type>war</type>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+		</dependency>
+	</dependencies>
+
+
+</project>
