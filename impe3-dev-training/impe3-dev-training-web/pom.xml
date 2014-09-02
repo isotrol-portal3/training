@@ -3,7 +3,7 @@
 	<parent>
 		<groupId>com.isotrol.impe3.training</groupId>
 		<artifactId>impe3-dev-training</artifactId>
-		<version>2.9.192</version>
+		<version>3.0.0</version>
 	</parent>
 
 	<artifactId>impe3-dev-training-web</artifactId>
@@ -26,7 +26,7 @@
 		<dependency>
 			<groupId>com.isotrol.impe3.training</groupId>
 			<artifactId>impe3-dev-training-mod</artifactId>
-			<version>3.0.0-SNAPSHOT</version>
+			<version>3.0.0</version>
 		</dependency>
 		<dependency>
 			<groupId>com.isotrol.impe3</groupId>
