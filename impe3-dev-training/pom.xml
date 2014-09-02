@@ -4,11 +4,10 @@
 	<parent>
 		<artifactId>impe3-parent</artifactId>
 		<groupId>com.isotrol.impe3</groupId>
-		<version>2.9.192</version>
+		<version>3.0.0</version>
 	</parent>
 	<groupId>com.isotrol.impe3.training</groupId>
 	<artifactId>impe3-dev-training</artifactId>
-	<version>2.9.192</version>
 	<packaging>pom</packaging>
 	<name>Port@l :: Development Training</name>
 	<description>Port@l Development Training project</description>
