@@ -3,7 +3,7 @@
 	<parent>
 		<groupId>com.isotrol.impe3.training</groupId>
 		<artifactId>impe3-dev-training</artifactId>
-		<version>3.0.3</version>
+		<version>3.1.1-SNAPSHOT</version>
 	</parent>
 
 	<artifactId>impe3-dev-training-web</artifactId>
@@ -26,7 +26,7 @@
 		<dependency>
 			<groupId>com.isotrol.impe3.training</groupId>
 			<artifactId>impe3-dev-training-mod</artifactId>
-			<version>3.0.0</version>
+			<version>3.1.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.isotrol.impe3</groupId>
@@ -45,6 +45,11 @@
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.0.4</version>
 		</dependency>
 	</dependencies>
 
